@@ -2,207 +2,261 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Friend Finder App</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Friend Finder App</title>
 
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Chosen -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Survey Questions</h1>
-        <hr>
-        <h4><strong>Your Info (both fields are required)</strong></h4>
-        <strong>Name</strong>
-        <input type="text" id="name" class="form-control" required>
-        <strong>Link to Photo Image</strong>
-        <input type="text" id="photo" class="form-control" required>
-        <hr>
+  <div class="container">
+    <h1>Survey Questions</h1>
+    <hr>
+    <h4><strong>Your Info (both fields are required)</strong></h4>
+    <strong>Name</strong>
+    <input type="text" id="name" class="form-control" required>
+    <strong>Link to Photo Image</strong>
+    <input type="text" id="photo" class="form-control" required>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 1</span>
+        <h4>You like to be alone.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default chosen-select" id="q1">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
     </div>
-
-    <div class="container">
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 1</span>
-                <h4>You like to be alone.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q1">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 2</span>
+        <h4>You generally like to be optimistic about things.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q2">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
         </div>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 2</span>
-                <h4>You generally like to be optimistic about things.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q2">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 3</span>
-                <h4>You have interest in always growing in every aspect in life.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q3">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 4</span>
-                <h4>You are tolerant to new ideas.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q4">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 5</span>
-                <h4>You like set schedules.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q5">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 6</span>
-                <h4>You cannot stand topics you are not interested in.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q6">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 7</span>
-                <h4>You seek attention when you need help.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q7">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 8</span>
-                <h4>You work well with others.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q8">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Question 9</span>
-                <h4>You have seasonal depression.</h4>
-                <div class="input-field col s12">
-                    <select class="browser-default" id="q9">
-                        <option value="">Choose your option</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5 (Strongly Agree)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Question 10</span>
-                    <h4>You have a lot of friends already.</h4>
-                    <div class="input-field col s12">
-                        <select class="browser-default" id="q10">
-                            <option value="">Choose your option</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+      </div>
     </div>
-     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-        Submit</button>
-   
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 3</span>
+        <h4>You have interest in always growing in every aspect in life.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q3">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 4</span>
+        <h4>You are tolerant to new ideas.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q4">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 5</span>
+        <h4>You like set schedules.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q5">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 6</span>
+        <h4>You cannot stand topics you are not interested in.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q6">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 7</span>
+        <h4>You seek attention when you need help.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q7">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 8</span>
+        <h4>You work well with others.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q8">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 9</span>
+        <h4>You have seasonal depression.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q9">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Question 10</span>
+        <h4>You have a lot of friends already.</h4>
+        <div class="input-field col s12">
+          <select class="browser-default" id="q10">
+            <option value="">Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+      aria-hidden="true"></i>
+    Submit</button>
 
+  <script>
+    // Capture the form inputs
+    $("#submit").on("click", function (event) {
+      event.preventDefault();
 
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function () {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
 
+        $(".chosen-select").each(function () {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled
+      if (validateForm()) {
+        // Create an object for the user"s data
+        var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", userData, function (data) {
+
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+
+        });
+      } else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+  </script>
 
 </body>
 
